@@ -1,6 +1,6 @@
-﻿(function() {
+(function() {
     // --- Mobile Menu Toggle ---
-    const menuBtn = document.querySelector('button[aria-label="Abrir menÃº"], button[aria-label="Cerrar menÃº"]');
+    const menuBtn = document.querySelector('button[aria-label="Abrir menú"], button[aria-label="Cerrar menú"]');
     const nav = document.querySelector('header nav');
     
     if (menuBtn && nav) {
