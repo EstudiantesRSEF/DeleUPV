@@ -1,4 +1,4 @@
-(function() {
+﻿(function() {
     // --- Mobile Menu Toggle ---
     const menuBtn = document.querySelector('button[aria-label="Abrir menú"], button[aria-label="Cerrar menú"]');
     const nav = document.querySelector('header nav');

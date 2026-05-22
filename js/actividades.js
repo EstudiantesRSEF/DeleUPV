@@ -1,4 +1,4 @@
-// js/actividades.js
+﻿// js/actividades.js
 // ============================================================================
 // DATOS DE LAS ACTIVIDADES (EDITABLE)
 // Para añadir una nueva actividad, simplemente añade un nuevo bloque al objeto.

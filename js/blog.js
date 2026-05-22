@@ -1,4 +1,4 @@
-(function() {
+﻿(function() {
     const blogContainer = document.querySelector('.mx-4.rounded-\\[2\\.5rem\\].bg-white.p-8.lg\\:p-16.shadow-2xl');
     if (!blogContainer) return;
     
