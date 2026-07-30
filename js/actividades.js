@@ -1,4 +1,4 @@
-﻿// js/actividades.js
+// js/actividades.js
 // ============================================================================
 // DATOS DE LAS ACTIVIDADES (EDITABLE)
 // Para añadir una nueva actividad, simplemente añade un nuevo bloque al objeto.
@@ -7,7 +7,7 @@
 const activitiesData = {
     "spectrum": {
         title: "Charla: The spectrum of Science",
-        date: "Mayo de 2026",
+        date: "Próximamente (curso 2026-27)",
         description: "<p>Una charla fascinante donde exploraremos la profundidad de la ciencia pasando por todas sus etapas.</p>",
         images: ["./images/activities/SPECTRUM.jpg"]
     },
@@ -160,15 +160,11 @@ const activitiesData = {
         renderImage();
     });
 
-    const activityCards = document.querySelectorAll('.group.cursor-pointer');
-    const idMapping = ["spectrum", "eureka", "anecoica", "feria", "postales", "astronomica"];
-    
-    activityCards.forEach((card, index) => {
+    // Use data-id attribute to identify cards (works across all year tabs)
+    const activityCards = document.querySelectorAll('[data-id]');
+    activityCards.forEach((card) => {
         card.addEventListener('click', () => {
-            let dataId = card.getAttribute('data-id');
-            if(!dataId && index < idMapping.length) {
-                dataId = idMapping[index];
-            }
+            const dataId = card.getAttribute('data-id');
             if(dataId) {
                 openModal(dataId);
             }
